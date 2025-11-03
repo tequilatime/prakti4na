@@ -1,0 +1,183 @@
+/* Базовый сброс и настройка шрифта */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4; /* Фон для всей страницы */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Контейнер всего резюме */
+.resume-container {
+    max-width: 1100px;
+    margin: 30px auto;
+    display: flex;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    min-height: 90vh;
+}
+
+/* --- ЛЕВАЯ КОЛОНКА (САЙДБАР) --- */
+.sidebar {
+    flex: 1; /* Занимает 1 часть */
+    background-color: #e3effc; /* Примерный синий цвет */
+    padding: 30px;
+    color: #2c3e50;
+}
+
+.avatar {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 15px; /* Скругление углов, как на макете */
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.sidebar h2 {
+    color: #1c2b3a;
+    border-bottom: 2px solid #b4cde6;
+    padding-bottom: 5px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.skills ul {
+    list-style-type: none;
+}
+
+.skills li {
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+/* --- ПРАВАЯ КОЛОНКА (ОСНОВНОЙ КОНТЕНТ) --- */
+.main-content {
+    flex: 2.5; /* Занимает 2.5 части (шире, чем сайдбар) */
+    padding: 40px;
+}
+
+.main-content header {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.main-content h1 {
+    font-size: 2.8em;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.job-title {
+    font-size: 1.4em;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.summary {
+    font-size: 0.95em;
+    font-style: italic; /* Как на макете */
+    color: #555;
+}
+
+.main-content h2 {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+/* Секция "Projects" */
+.projects ol {
+    list-style: decimal;
+    padding-left: 20px;
+}
+
+.projects li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.projects a {
+    color: #1a0dab;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.projects a:hover {
+    text-decoration: underline;
+}
+
+.projects .dots {
+    flex-grow: 1; /* Занимает все свободное место */
+    border-bottom: 2px dotted #aaa;
+    margin: 0 10px;
+    position: relative;
+    top: -3px; /* Немного опустить точки */
+}
+
+.projects .tech {
+    color: #555;
+    font-size: 0.9em;
+    white-space: nowrap; /* Не переносить текст */
+}
+
+/* Секции "Work Experience" и "Education" */
+.experience, .education {
+    margin-top: 30px;
+}
+
+.job {
+    margin-bottom: 25px;
+}
+
+.main-content h3 {
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.company {
+    font-weight: 700;
+    color: #000;
+}
+
+.date, .degree {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.experience ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.experience li {
+    margin-bottom: 5px;
+    font-style: italic; /* Как на макете */
+    color: #444;
+}
